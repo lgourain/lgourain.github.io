@@ -11,7 +11,7 @@ export const headData = {
 export const heroData = {
   title: "Hey, moi c'est",
   name: 'Louis',
-  subtitle: 'Je suis développeur web',
+  subtitle: 'Je suis développeur React.js, Vue.js et Symfony',
   cta: 'En savoir plus',
 };
 
@@ -66,7 +66,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'logicoss.jpg',
     title: 'Logicoss',
-    info: "Mise en place d'un questionnaire de santé en serverless permettant à des participants d'un événements sportif d'informer un responsable médical de leur été de santé.",
+    info: "Mise en place d'un questionnaire de santé en serverless permettant à des participants d'un événements sportif d'informer un responsable médical de leur état de santé.",
     info2: 'Compétences : Serverless - AWS (Lambda, Amplify, SES, SQS, ..) - Symony - Node.js - Vue.js',
     url: 'http://www.logicoss.com/',
     repo: '', // if no repo, the button will not show up
