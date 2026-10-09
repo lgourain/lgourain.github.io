@@ -4,8 +4,55 @@
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
+  background: $creme;
+  position: relative;
+  overflow: hidden;
   font-weight: 400;
+
+  // Barres ambre obliques (coupe du logo, charte v1)
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -10%;
+    height: 120%;
+    transform: skewX(-20deg);
+    pointer-events: none;
+  }
+  &::before {
+    right: 14%;
+    width: 4.4rem;
+    background: $ambre;
+  }
+  &::after {
+    right: 9%;
+    width: 1.4rem;
+    background: $ambre-clair;
+    opacity: 0.5;
+  }
+  @include respond(tab-port) {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .hero-tagline {
+    font-size: 2.4rem;
+    color: $ardoise;
+    text-align: left;
+    margin-bottom: 3.2rem;
+    max-width: 60rem;
+
+    @include respond(tab-port) {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include respond(phone) {
+      font-size: 1.8rem;
+    }
+  }
   color: $dark-blue-text;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
@@ -13,7 +60,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: -1;
+  z-index: 0;
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
@@ -27,7 +74,8 @@
 
   .hero-title {
     font-size: 5.6rem;
-    font-weight: 700;
+    font-weight: 600;
+    margin-bottom: 2rem !important;
     margin-bottom: 3.2rem;
     text-align: left;
 

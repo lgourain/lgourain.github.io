@@ -3,6 +3,8 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-texte;
   text-align: center;
+  background: $creme;
+  color: $encre;
 }

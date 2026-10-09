@@ -1,26 +1,36 @@
 import { nanoid } from 'nanoid';
 
+// Contenu aligné sur la source unique du profil (ai-pro-freelance/data/freelance/profil/profil.json) et la charte v1 du 09/10/2026.
+// Clients des réalisations anonymisés, pas de capture d'écran client.
+
 // HEAD DATA
 export const headData = {
-  title: 'Louis Gourain | Développeur Web',
+  title: 'Louis Gourain | Développeur freelance Vue.js & Nuxt',
   lang: 'fr',
-  description: 'Bienvenue sur mon site web',
+  description:
+    "Je conçois, construis et débloque des applications web métier en Vue.js et Nuxt. Freelance depuis Madrid, à distance pour la France et l'Europe.",
+  url: 'https://www.louis-gourain.com',
+  image: 'https://www.louis-gourain.com/brand/partage-1200x630.png',
 };
 
 // HERO DATA
 export const heroData = {
-  title: "Hey, moi c'est",
-  name: 'Louis',
-  subtitle: 'Je suis développeur React.js, Vue.js et Symfony',
+  title: 'Bonjour, je suis',
+  name: 'Louis Gourain',
+  subtitle: 'Développeur freelance Vue.js & Nuxt.',
+  tagline: 'Je conçois, construis et débloque des applications web métier.',
   cta: 'En savoir plus',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: "Je suis un passionné de développement web et je travaille actuellement dans une agence lyonnaise : Wanadev. Je réalise également selon mes disponibilités des missions en freelance afin d'en apprendre toujours plus.",
-  paragraphTwo: "Je travaille sur divers projets et j'apporte mes qualités techniques et humaines afin de les mener à bien.",
-  paragraphThree: "Mes compétences techniques sont aussi bien liées au front-end (React.js, Vue.js, ...) qu'au back-end (Symfony).",
+  img: 'profile.png',
+  paragraphOne:
+    "Pendant 7 ans en agence, j'ai été développeur full-stack, chef de projet puis Lead Dev Front-end. J'y ai notamment créé l'application de prise en charge médicale utilisée par les secouristes des Jeux Olympiques de Paris 2024 : plus de 1 000 prises en charge par jour, sans incident.",
+  paragraphTwo:
+    "Freelance depuis Madrid, je travaille avec deux types de clients. Les PME dont l'activité tient sur Excel, du papier et des e-mails : je comprends votre métier, je vous montre une maquette cliquable sous 24 h, puis je livre votre outil par lots de 3 à 6 semaines. Et les équipes tech dont le front Vue rame ou dont la migration vers Vue 3 traîne : audit, architecture, migration, qualité et tests, développement assisté par l'IA.",
+  paragraphThree:
+    'Une réponse sous 24 h, un point écrit chaque semaine, des tests et une revue de code sur chaque fonctionnalité. Certifié Vue.js et Scrum Master, ingénieur IMT Lille Douai. Français, anglais, espagnol.',
   resume: '', // if no resume, the button will not show up
 };
 
@@ -28,66 +38,56 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'caseo.jpg',
-    title: 'Caséo',
-    info: "Création d'un configurateur de fenêtres 2D.",
-    info2: "Compétences : Gestion de Projet - Intégration Design - Vue.js - Symfony",
-    url: 'https://www.caseo-maison.com/',
-    repo: '', // if no repo, the button will not show up
+    img: 'projet-secours.png',
+    title: 'Application de prise en charge médicale',
+    info:
+      "Application conçue de zéro avec le client pour les équipes de secours sur les grands événements sportifs : Jeux Olympiques de Paris 2024 et de Milan Cortina 2026, Marathon de Paris, UTMB. Plus de 1 000 prises en charge par jour, sans incident. Lead Dev Front-end.",
+    info2: 'Vue 3 · TypeScript · PWA hors-ligne · AWS',
+    url: '',
+    repo: '',
   },
   {
     id: nanoid(),
-    img: 'bematrix.jpg',
-    title: "BeMatrix",
-    info: "Mise en place des abonnements avec Stripe pour accéder à l'outil 3D de configuration de stands.",
-    info2: 'Compétences : Stripe - PHP Unit - Symfony - React.js',
-    url: 'https://my.bematrix.com/',
-    repo: '', // if no repo, the button will not show up
+    img: 'projet-fouilles.png',
+    title: 'Application de fouilles archéologiques',
+    info:
+      "Évolution de l'application de saisie et d'exploration des données de fouilles d'une école d'archéologie suisse, livrée au forfait par lots : moteur relationnel, requêtes expertes, photos, cartographie, suivi des erreurs.",
+    info2: 'Vue 3 · Quasar · Pinia · Go · Sentry',
+    url: '',
+    repo: '',
   },
   {
     id: nanoid(),
-    img: 'octopod.png',
-    title: 'OctopodVR',
-    info: 'Refonte du launcher Octopod permettant aux exploitants de salles de jeux VR de contrôler les différents ordinateurs de leur salle à distance.',
-    info2: 'Compétences : React.js - Golang - PouchDB / CouchDB',
-    url: 'https://www.octopodvr.com/',
-    repo: '', // if no repo, the button will not show up
+    img: 'projet-pwa.png',
+    title: 'PWA hors-ligne de terrain',
+    info:
+      "Application installable, utilisable sans réseau, pour que les agents d'un site patrimonial protégé saisissent leurs mains courantes pendant les visites. Les données se synchronisent au retour du réseau.",
+    info2: 'PWA · Hors-ligne · React · React-Admin · API Platform',
+    url: '',
+    repo: '',
   },
   {
     id: nanoid(),
-    img: 'chauvet.jpg',
-    title: 'Grotte Chauvet',
-    info: "Création d'une PWA (fonctionnement hors-ligne) permettant aux employés de saisir des mains courantes.",
-    info2: 'Compétences : API-Platform - Symfony - React.js - React-Admin',
-    url: 'https://archeologie.culture.fr/chauvet/fr',
-    repo: '', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'logicoss.jpg',
-    title: 'Logicoss',
-    info: "Mise en place d'un questionnaire de santé en serverless permettant à des participants d'un événements sportif d'informer un responsable médical de leur état de santé.",
-    info2: 'Compétences : Serverless - AWS (Lambda, Amplify, SES, SQS, ..) - Symony - Node.js - Vue.js',
-    url: 'http://www.logicoss.com/',
-    repo: '', // if no repo, the button will not show up
+    img: 'projet-aidd.png',
+    title: "Développement assisté par l'IA",
+    info:
+      "Une méthode en 6 phases (cadrage, design, tests d'abord, implémentation, revue critique, capitalisation) et des règles de code pour Claude Code et GitHub Copilot : livrer plus vite sans sacrifier les tests ni la revue.",
+    info2: 'Claude Code · Copilot · Vue 3 · Vitest',
+    url: '',
+    repo: '',
   },
 ];
 
 // CONTACT DATA
 export const contactData = {
-  cta: "Je suis toujours partant pour une nouvelle aventure et je reste à l'écoute de toutes les opportunités. Vous souhaitez qu'on travaille ensemble ? Super !",
-  btn: 'Parlons-en',
-  email: 'louis.gourain@gmail.com',
+  cta: 'Un outil métier à construire, un front Vue à débloquer ? Écrivez-moi, je vous réponds sous 24 h.',
+  btn: 'Écrivez-moi',
+  email: 'contact@louis-gourain.com',
 };
 
 // FOOTER DATA
 export const footerData = {
   networks: [
-    {
-      id: nanoid(),
-      name: 'twitter',
-      url: 'https://twitter.com/LouisGourain/',
-    },
     {
       id: nanoid(),
       name: 'linkedin',
@@ -99,6 +99,7 @@ export const footerData = {
       url: 'https://github.com/lgourain/',
     },
   ],
+  text: 'Louis Gourain · Développeur freelance Vue.js & Nuxt · Madrid',
 };
 
 // Github start/fork buttons

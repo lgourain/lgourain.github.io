@@ -1,18 +1,25 @@
-// COLORS
-$primary-color: #1ec469;
-$secondary-color: #27ca94;
+// COLORS - charte v1 « l'encre et l'ambre » (09/10/2026), cf. ai-pro-freelance/data/freelance/profil/charte/tokens.css
+$encre: #232b45;
+$nuit: #151a2b;
+$ambre: #d97706; // graphique : jamais de petit texte sur fond clair
+$ambre-texte: #b45309; // liens, boutons sur fond clair
+$ambre-clair: #f59e0b; // accents sur fond sombre
+$creme: #faf7f2;
+$sable: #f1ece3;
+$ardoise: #5b6478;
 
-// $primary-color: #02aab0;
-// $secondary-color: #00cdac;
-
-// $primary-color: #7f449d;
-// $secondary-color: #793fc1;
+$primary-color: $ambre-texte;
+$secondary-color: $ambre;
 
 $white-color: #fff;
 
-$dark-grey: #333333;
+$dark-grey: $nuit;
 
-$dark-blue-text: #272341; // For Headings
+$dark-blue-text: $encre; // For Headings
+
+// FONTS
+$font-titre: 'Fraunces', Georgia, 'Times New Roman', serif;
+$font-texte: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
 
 // FONT SIZE
 $default-font-size: 1.6rem;
