@@ -91,7 +91,7 @@ export const footerData = {
     {
       id: nanoid(),
       name: 'linkedin',
-      url: 'https://www.linkedin.com/in/louis-gourain-7a0551113/',
+      url: 'https://www.linkedin.com/in/louis-gourain/',
     },
     {
       id: nanoid(),
