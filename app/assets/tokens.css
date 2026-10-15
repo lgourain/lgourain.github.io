@@ -1,0 +1,26 @@
+/* Charte Louis Gourain - jetons de design (v1 du 09/10/2026).
+   Source de vérité des couleurs, typos et formes : à reprendre tels quels dans le site Nuxt
+   (Nuxt UI : primary = encre, accent = ambre), les devis, les factures, le CV et les visuels.
+   Détail et règles d'usage : ../identite-visuelle.md (section « Charte v1 »). */
+:root {
+  /* Couleurs */
+  --encre: #232B45;        /* principale : texte, titres, structure, logo (L) - 14:1 sur blanc */
+  --nuit: #151A2B;         /* fond sombre */
+  --ambre: #D97706;        /* accent graphique : logo (G), filets, formes. Jamais pour du texte sur fond clair */
+  --ambre-texte: #B45309;  /* liens, boutons, chiffres clés sur fond clair - 5:1 sur blanc, 4,7:1 sur crème */
+  --ambre-clair: #F59E0B;  /* accent sur fond sombre - 8:1 sur nuit */
+  --creme: #FAF7F2;        /* fond clair, texte sur fond sombre (16:1 sur nuit) */
+  --sable: #F1ECE3;        /* fond secondaire : zébrage de tableaux, encadrés */
+  --ligne: #E3DDD2;        /* bordures, séparateurs */
+  --ardoise: #5B6478;      /* texte secondaire - 5,6:1 sur crème */
+  --alerte: #B42318;       /* erreurs, retards - 6,2:1 sur crème */
+  --succes: #2F6B4F;       /* validé, payé (usage rare) */
+
+  /* Typographies */
+  --titre: "Fraunces", Georgia, "Times New Roman", serif;   /* titres, nom, chiffres mis en avant */
+  --texte: "Inter", "Segoe UI", Roboto, Arial, sans-serif;  /* tout le reste */
+
+  /* Formes : angles droits, rayon minimal, coupe oblique reprise du logo */
+  --rayon: 4px;
+  --coupe: 20deg;          /* inclinaison des formes d'accent (barres ambre obliques, comme les coupes du logo) */
+}

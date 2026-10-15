@@ -1,0 +1,59 @@
+{
+  "nom": "Louis Gourain",
+  "label": "Développeur freelance Vue.js & Nuxt",
+  "email": "contact@louis-gourain.com",
+  "url": "https://www.louis-gourain.com/",
+  "pitchs": {
+    "construire": "Vous gérez votre activité sur Excel, papier et e-mails et vous voulez votre propre outil ? Je comprends votre métier, je vous montre une maquette cliquable sous 24h, puis je livre par lots de 3 à 6 semaines, avec une version de test en ligne à chaque étape.",
+    "debloquer": "Votre front Vue rame, l'architecture coince ou il vous faut un senior vite ? Lead Dev Vue/Nuxt certifié, je m'intègre sans période d'adaptation : audit, architecture (Clean Architecture), migration, qualité et tests, mise en place de l'IA dans le flux de dev."
+  },
+  "profils": {
+    "linkedin": "https://www.linkedin.com/in/louis-gourain",
+    "malt": "https://www.malt.fr/profile/louisgourain",
+    "github": "https://github.com/lgourain"
+  },
+  "realisations": {
+    "secours": {
+      "titre": "Application de prise en charge médicale et de secours",
+      "client": "Un éditeur de logiciel de secours et de médical événementiel",
+      "description": "Application conçue de zéro avec le client pour les équipes de secours, utilisée dans deux contextes : le médical sur les grands événements sportifs, et la surveillance des plages.",
+      "points": [
+        "Création de la PWA de zéro en janvier 2022, puis lead front jusqu'en 2026 (dont l'application des Jeux Olympiques, un fork de la PWA démarré en 2023) : architecture, pilotage de l'équipe front, intégration rapide de nouveaux développeurs sous délais très serrés",
+        "Jeux Olympiques de Paris 2024 : plus de 1 000 prises en charge par jour, aucun incident pendant toute la durée des Jeux. Puis Jeux Olympiques d'hiver de Milan Cortina 2026",
+        "Utilisée chaque année sur de grands événements sportifs : Marathon de Paris (60 000 coureurs, 1 300 patients pris en charge), UTMB (environ 300 soignants dans 3 pays), Ironman, World Athletics, L'Étape du Tour, SaintéLyon, Marathon des Sables",
+        "Utilisée aussi par des associations de secourisme (UNASS, FFSS, Croix Blanche, Ordre de Malte) et pour la surveillance des plages par la SNSM et des communes du littoral : dématérialisation de l'administratif des postes de secours",
+        "Premier questionnaire de santé en serverless (AWS Lambda, Amplify, SES, SQS), refondu ensuite en Clean Architecture avec un code métier couvert à 100 % par les tests",
+        "Front PWA : Vue 3, TypeScript, Tailwind v4, Pinia, Dexie/IndexedDB (hors-ligne), Cypress, mises à jour de dépendances automatisées (Renovate)",
+        "Passage de l'équipe en Scrum début 2025 : framework complet, cérémonies, amélioration continue",
+        "Astreintes pendant les Jeux"
+      ]
+    },
+    "fouilles": {
+      "titre": "Application de fouilles archéologiques",
+      "client": "Une école d'archéologie suisse",
+      "description": "Évolution d'une application web de saisie et d'exploration des données de fouilles archéologiques, synchronisée par git.",
+      "points": [
+        "Lot 1 : mise à jour des dépendances, Sentry, système de coordonnées dynamique, sélection groupée, correction des bugs prioritaires, upload de photos",
+        "Lot 2 : moteur relationnel, mode expert de requêtes JMESPath, objets sans coordonnées, overlays cartographiques"
+      ]
+    },
+    "mainsCourantes": {
+      "titre": "PWA hors-ligne de mains courantes",
+      "client": "Un site patrimonial protégé",
+      "description": "Application installable, utilisable sans réseau, pour tracer toutes les interventions dans une grotte préhistorique protégée (la grotte elle-même, pas le musée) : techniciens et chercheurs y consignent tout, photos comprises, et les données se synchronisent au retour au bureau.",
+      "points": []
+    },
+    "vr": {
+      "titre": "Launcher de salles de réalité virtuelle",
+      "client": "Un éditeur de salles de réalité virtuelle",
+      "description": "Refonte du logiciel permettant aux exploitants de piloter à distance les ordinateurs et les jeux de leur salle (installation, démarrage des parties, scores).",
+      "points": []
+    },
+    "refonte": {
+      "client": "Une enseigne française de menuiseries"
+    },
+    "couleurs": {
+      "client": "Une enseigne de bricolage"
+    }
+  }
+}

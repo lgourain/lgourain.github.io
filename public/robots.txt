@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://louis-gourain.com/sitemap.xml
