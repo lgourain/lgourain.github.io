@@ -7,7 +7,7 @@
     "dev": "npm run sync && nuxt dev",
     "generate": "npm run sync && nuxt generate && node scripts/verifier.mjs",
     "preview": "npx serve .output/public",
-    "deploy": "npm run generate && npx --yes wrangler@4.151.0 pages deploy .output/public --project-name louis-gourain --branch main"
+    "deploy": "npm run generate && npx --yes wrangler@4.151.0 pages deploy .output/public --project-name louis-gourain --branch main --commit-dirty=true --force"
   },
   "dependencies": {
     "lucide-vue-next": "^1.0.0",
